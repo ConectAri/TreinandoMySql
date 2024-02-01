@@ -1,3 +1,4 @@
+--Criar a tabela de clientes:
 CREATE DATABASE market;
 
 CREATE TABLE clientes (
@@ -8,6 +9,7 @@ email VARCHAR(100),
 telefone VARCHAR(15)
 );
 
+--Criar a tabela de pedidos:
 CREATE TABLE pedidos (
 numero_pedido INT PRIMARY KEY AUTO_INCREMENT,
 produto VARCHAR(100),
@@ -17,6 +19,7 @@ cliente_id INT,
 FOREIGN KEY (cliente_id) REFERENCES clientes(id)
 );
 
+--Alterar o nome da coluna de "numero_pedido"para ïd"na tabela de pedidos:
 ALTER TABLE pedidos
 CHANGE COLUMN numero_pedido id INT AUTO_INCREMENT;
 
