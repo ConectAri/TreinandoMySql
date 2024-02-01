@@ -1,0 +1,2 @@
+# TreinandoMySql
+Exercicios de MySql
